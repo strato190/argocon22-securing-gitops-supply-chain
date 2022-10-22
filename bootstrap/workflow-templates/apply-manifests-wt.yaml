@@ -5,8 +5,8 @@ metadata:
   annotations:
     workflows.argoproj.io/description: >-
       Apply the Manifests for deploy the application in K8s
-    workflows.argoproj.io/maintainer: 'Rcarrata'
-    workflows.argoproj.io/maintainer_url: 'https://github.com/rcarrata/argocon22-securing-gitops-supply-chain'
+    workflows.argoproj.io/maintainer: 'strato190'
+    workflows.argoproj.io/maintainer_url: 'https://github.com/strato190/argocon22-securing-gitops-supply-chain'
     workflows.argoproj.io/version: '>= 3.3.6'
 spec:
   entrypoint: main

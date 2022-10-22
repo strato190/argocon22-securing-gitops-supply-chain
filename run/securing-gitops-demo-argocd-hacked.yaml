@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: k8s/
-    repoURL: https://github.com/rcarrata/argocon22-app
+    repoURL: https://github.com/strato190/argocon22-app
     targetRevision: gitops-hacked
   syncPolicy:
     automated:

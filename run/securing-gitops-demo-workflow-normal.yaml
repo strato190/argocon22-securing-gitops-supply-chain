@@ -9,13 +9,13 @@ spec:
   arguments:
     parameters:
       - name: app_repo
-        value: "https://github.com/rcarrata/argocon22-app"
+        value: "https://github.com/strato190/argocon22-app"
       - name: git_branch
         value: 'master'
       - name: container_tag
         value: 'v1'
       - name: container_image
-        value: "ghcr.io/rcarrata/argocon22-app"
+        value: "ghcr.io/strato190/argocon22-app"
       - name: dockerfile
         value: Dockerfile
       - name: path

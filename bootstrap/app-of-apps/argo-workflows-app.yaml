@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: bootstrap/argo-workflows/deploy-argo/postgres/
-    repoURL: https://github.com/rcarrata/argocon22-securing-gitops-supply-chain
+    repoURL: https://github.com/strato190/argocon22-securing-gitops-supply-chain
     targetRevision: main
   syncPolicy:
     automated:
