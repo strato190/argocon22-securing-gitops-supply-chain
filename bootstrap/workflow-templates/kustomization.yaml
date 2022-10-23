@@ -11,4 +11,3 @@ resources:
 - git-clone-wt.yaml
 - sign-image-wt.yaml
 - update-manifests-wt.yaml
-- app-route.yaml
