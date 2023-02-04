@@ -19,7 +19,7 @@ spec:
 
   - name: container-build
     container:
-      image: quay.io/openshift-pipeline/rhel8-buildah:c817e2da #registry.redhat.io/rhel8/buildah@sha256:e19cf23d5f1e0608f5a897f0a50448beb9f8387031cca49c7487ec71bd91c4d3
+      image: quay.io/buildah/stable:v1.28.0 #quay.io/openshift-pipeline/rhel8-buildah:c817e2da #registry.redhat.io/rhel8/buildah@sha256:e19cf23d5f1e0608f5a897f0a50448beb9f8387031cca49c7487ec71bd91c4d3
       command:
         - sh
         - -c
