@@ -27,7 +27,7 @@ spec:
           set -x
           cd /workdir/repo-app
           buildah --storage-driver=vfs bud --format=oci --no-cache --tls-verify=false -f {{workflow.parameters.dockerfile}} -t {{workflow.parameters.container_image}}:{{workflow.parameters.container_tag}} .
-
+          buildah images --storage-driver=vfs
           buildah --storage-driver=vfs push '--authfile' /etc/secret-volume/config.json --tls-verify=false --digestfile /workdir/repo-app/image-digest {{workflow.parameters.container_image}}:{{workflow.parameters.container_tag}} docker://{{workflow.parameters.container_image}}:{{workflow.parameters.container_tag}}
 
       volumeMounts:
