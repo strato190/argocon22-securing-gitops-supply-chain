@@ -36,6 +36,10 @@ spec:
         - mountPath: /etc/secret-volume
           name: ghcr-auth-secret
           readOnly: true
+      securityContext:
+        allowPrivilegeEscalation: true
+        runAsUser: 0
+        privileged: true
       resources:
         requests:
           memory: 1Gi
