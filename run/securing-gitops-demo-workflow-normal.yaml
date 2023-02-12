@@ -11,7 +11,7 @@ spec:
       - name: app_repo
         value: "https://github.com/strato190/argocon22-app"
       - name: git_branch
-        value: 'master'
+        value: 'main'
       - name: container_tag
         value: 'v1'
       - name: container_image
