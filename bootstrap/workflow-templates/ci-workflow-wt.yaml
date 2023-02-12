@@ -56,6 +56,8 @@ spec:
       value: ""
     - name: deployment_name
       value: ""
+    - name: namespace
+      value: default
  # All the steps in this DAG are referencing external templates.
  # This allows us to re-use those templates in other workflows, and also makes this CI workflow quite tidy.
  # For reference we have also included a 'local' template (delete-application) to show that it's possible to mix-and-match local and external templates. 

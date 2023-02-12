@@ -22,5 +22,7 @@ spec:
         value: "k8s/"
       - name: deployment_name
         value: "argocon22-app"
+      - name: namespace
+        value: "default"
   workflowTemplateRef:
     name: ci-workflow
