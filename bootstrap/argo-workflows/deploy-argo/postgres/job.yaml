@@ -1,0 +1,21 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: mimirtool-rules-trigger-
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+      - name: trigger
+        image:  'busybox:latest'
+        command: ["sh",  "-c"]
+        args:
+          - >-
+              echo "yas"
+      restartPolicy: Never
+      serviceAccount: trigger
+  backoffLimit: 4
