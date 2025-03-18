@@ -17,5 +17,4 @@ spec:
           - >-
               echo "yas"
       restartPolicy: Never
-      serviceAccount: trigger
   backoffLimit: 4
